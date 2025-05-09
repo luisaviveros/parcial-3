@@ -9,6 +9,6 @@ router.post("/marco", gameController.notifyMarco);
 router.post("/polo", gameController.notifyPolo);
 router.post("/select-polo", gameController.selectPolo);
 router.post("/reset", gameController.resetGame); 
-router.post("/sort-players-alphabetically", gameController.sortPlayersAlphabetically);
+
 
 module.exports = router;
