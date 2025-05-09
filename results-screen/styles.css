@@ -1,0 +1,140 @@
+/* Estilos globales */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #72c6ef 0%, #004e92 100%);  /* Gradiente azul */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Estilos para la pantalla 1 (screen1) */
+#screen1 {
+  animation: slideInFromLeft 0.6s ease-out;
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);  /* Gradiente azul */
+  padding: 3rem 2rem;  /* Espaciado cómodo */
+  border-radius: 20px;  /* Bordes redondeados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);  /* Sombra sutil para profundidad */
+  color: #fff;  /* Texto en blanco */
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;  /* Centrado automático con margen */
+  font-family: 'Arial', sans-serif;
+}
+
+#screen1 h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease-out 0.3s;
+  animation-fill-mode: both;
+  color: #ffffff;  /* Color blanco para el título */
+}
+
+#screen1 p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-out 0.6s;
+  animation-fill-mode: both;
+  color: #ffffff;  /* Color blanco para el texto */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para la pantalla 2 (screen2) */
+#screen2 {
+  animation: slideInFromRight 0.6s ease-out;
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);  /* Gradiente azul */
+  padding: 3rem 2rem;  /* Espaciado cómodo */
+  border-radius: 20px;  /* Bordes redondeados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);  /* Sombra sutil para profundidad */
+  color: #fff;  /* Texto en blanco */
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;  /* Centrado automático con margen */
+  font-family: 'Arial', sans-serif;
+}
+
+#screen2 h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease-out 0.3s;
+  animation-fill-mode: both;
+  color: #ffffff;  /* Color blanco para el título */
+}
+
+#screen2 p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-out 0.6s;
+  animation-fill-mode: both;
+  color: #ffffff;  /* Color blanco para el texto */
+}
+
+#go-screen-back {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffffcc;  /* Fondo sutilmente translúcido */
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 1s ease-out 0.9s;
+  animation-fill-mode: both;
+}
+
+#go-screen-back:hover {
+  background-color: #fff;
+  transform: scale(1.05);  /* Efecto de escalado al pasar el cursor */
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
